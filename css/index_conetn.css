@@ -1,0 +1,198 @@
+html,body{
+    padding:0;margin:0;
+}
+a{
+    color:#7b7b7b;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+.synopsis {
+    padding: 50px 0;
+}
+.small_nav {
+    padding: 0px 0px 70px 0px;
+}
+.train {
+    padding: 100px 0;
+    background: #f7f7f7;
+}
+.section-style{
+    padding: 10px 0;
+    color: #5e5e5e;
+    font-size: 16px;
+}
+.kecheng{
+    padding: 20px 0;
+}
+.synopsis-icon{
+    display: inline-block;
+    height: 50px;
+    background:url("../images/main_img1.png")    no-repeat 100%;
+}
+.culture-icon{
+    display: inline-block;
+    height: 50px;
+    background:url("../images/main_img4.png")    no-repeat 100%;
+}
+.news-icon{
+    display: inline-block;
+    height: 50px;
+    background:url("../images/main_img5.png")    no-repeat 100%;
+}
+.contact-icon{
+    display: inline-block;
+    height: 50px;
+    background:url("../images/main_img6.png")    no-repeat 100%;
+}
+.row-inside:hover .synopsis-icon{
+    background:url("../images/main_img1_h.png") no-repeat 100%;
+}
+.row-inside:hover .culture-icon{
+    background:url("../images/main_img4_h.png") no-repeat 100%;
+}
+.row-inside:hover .news-icon{
+    background:url("../images/main_img5_h.png") no-repeat 100%;
+}
+.row-inside:hover .contact-icon{
+    background:url("../images/main_img6_h.png") no-repeat 100%;
+}
+.line-height{
+    padding: 7px 0px 0px 0px;
+    text-align: center;
+}
+.row-inside:hover strong{
+    color:#cf101c;
+}
+
+.row-inside:hover a{
+    color:#7b7b7b;
+}
+.symbol{
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    background: url("../images/main_img2.png")no-repeat 0% 50%;
+    border-right: #cccccc solid 1px;
+}
+.symbol-borderless{
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    background: url("../images/main_img2.png")no-repeat 0% 50%;
+
+}
+.row-inside:hover .symbol{
+    background: url("../images/main_img2_h.png")no-repeat 0% 50%;
+}
+.row-inside:hover .symbol-borderless{
+    background: url("../images/main_img2_h.png")no-repeat 0% 50%;
+}
+.business-padding{
+    padding: 0px 0px 10px 0px;
+}
+.business-text{
+    padding: 0px 0px 30px 0px;
+}
+.business-text p{
+   color: #5e5e5e;
+    font-size: 12px;
+    line-height:8px;
+}
+.business-img{
+    height:150px;
+    width: 100%;
+}
+.business-img-1{
+    background: url("../images/main_img157774224.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.business-img-2{
+    background: url("../images/main_img11739633628422479.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.business-img-3{
+    background: url("../images/main_img117396362.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.business-img-3{
+    background: url("../images/main_img117396362.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.business-img-4{
+    background: url("../images/201511051701588225259.png") no-repeat;
+    background-size: 100% 100%;
+}
+.business-blue{
+    padding: 5px 30px;
+    height: 150px;
+    width: 100%;
+    background: #cf101c;
+    color: #ffffff;
+}
+.learn-more{
+    height: 30px;
+    width: 110px;
+    border: solid 1px #ffffff;
+    line-height: 30px;
+    padding: 0px 10px;
+}
+.business-blue a{
+    color: #ffffff;
+    font-size: 12px;
+}
+.learn-more:hover{
+   background:#ff5b65;
+}
+.col-md-3,.col-xs-12,.col-sm-6{
+    padding-bottom: 30px;
+
+}
+.col-md-4.col-xs-12,.col-sm-6{
+    padding-bottom: 30px;
+
+}
+.synopsis-latest{
+    padding-top: 0px;
+    padding-bottom: 50px;
+}
+.latest-news{
+    padding: 0px 10px;
+    height: 190px;
+}
+
+.latest-news-bg{
+    height: 170px;
+    background: #fdced1;
+    padding: 0px 20px;
+}
+.latest-news-title{
+    height: 80px;
+    border-bottom:solid 2px #fc101c;
+
+}
+.latest-news-title h5{
+    line-height: 80px;
+}
+.latest-news-title h5 a{
+    color: #000000;
+}
+.latest-news-title p{
+    font-size: 10px;
+}
+.latest-news-bg:hover{
+    background: #fc101c;
+}
+.latest-news:hover h5 a{
+    color:#ffffff;
+}
+.latest-news:hover p{
+    color:#ffffff;
+}
+.latest-news:hover p{
+    color:#ffffff;
+}
+.latest-news:hover .latest-news-title{
+    border-bottom:solid 2px #ffffff;
+}

@@ -1,0 +1,173 @@
+<!--
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+
+        }
+        #box{
+            float: right;
+            width: 200px;
+            margin: 30px auto;
+            text-align: center;
+            position:relative;
+            z-index: 2;
+        }
+        li{
+          list-style:none;
+            background-color: #2b542c;
+            border-bottom:1px solid #fc101c;
+            height: 30px;
+
+        }
+        #div{
+            width: 200px;
+            height: 40px;
+            line-height:40px;
+            background-color: #ccc;
+        }
+        #ul{
+            transition:all .3s;
+            display: none;
+        }
+        .abc{
+
+        }
+    </style>
+</head>
+<body>
+<div>123</div>
+    <div class="abc">
+        <div id="box">
+            <div id="div">
+                点击
+            </div>
+            <ul id="ul">
+                <li>aaa</li>
+                <li>aaa</li>
+                <li>aaa</li>
+                <li>aaa</li>
+            </ul>
+        </div>
+    </div>
+<div>123</div>
+</body>
+</html>
+<script>
+    var oDiv = document.getElementById('div');
+    var oUl = document.getElementById('ul');
+    var dir=true;
+    oDiv.onclick=function(){
+        if(dir===true){
+            oUl.style.display = 'block';
+            dir = false;
+        }else {
+            oUl.style.display = 'none';
+            dir = true;
+        }
+        return false;
+    };
+</script>-->
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            overflow: hidden;
+        }
+
+        img {
+            float: left;
+        }
+
+        span {
+            float: left;
+        }
+    </style>
+    <style>
+        #a {
+            width: 100px;
+            height: 100px;
+        }
+
+        .a {
+            width: 200px;
+            height: 100px;
+        }
+
+        div {
+
+        }
+
+        iframe {
+            border: none;
+            display: inline-block;
+            background-color: #2b542c;
+            float: left;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+<div style="line-height: 40px;">
+    <img src="icon/logo.png" width="40" height="40" alt="">
+    正德管理
+    <span>正德管理</span>
+</div>
+
+
+<div id="a" class="a"></div>
+
+<iframe id="if" src="test2.html"></iframe>
+
+
+<div>
+    正德管理
+</div>
+
+<div id="page1"></div>
+<div id="page2"></div>
+<script>
+    $("#page1").load("test2.html");
+    $("#page2").load("test2.html");
+</script>
+
+</body>
+</html>-->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>test页面引入</title>
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+    <div id="box"></div>
+    <script  type="text/javascript">
+        $("#box").load('test2.html');
+    </script>
+</body>
+</html>
+<script src="js/jquery.min.js"></script>
