@@ -1,141 +1,201 @@
-html,body{
-    padding:0;margin:0;
+#zhengde {
+    overflow: hidden;
 }
-a{
-    text-decoration:none;
-}
-li{
-    list-style: none;
-}
-.header_top{
-    background-color: #333;
-    color:#fff;
+
+html, body {
+    padding: 0;
     margin: 0;
 }
-.header{
-    padding:1rem 0;
+
+a {
+    text-decoration: none;
 }
-.header h1{
+
+li {
+    list-style: none;
+}
+
+.header_top {
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+}
+
+.header {
+    padding: 1rem 0;
+}
+
+.header h1 {
     display: inline-block;
-    padding:0;
+    padding: 0;
     float: left;
     margin-left: -99999px;
 }
-.header h1{
+
+.header h1 {
     display: inline-block;
+    float: left;
 }
-.header nav{
-    background-color: #fff;
+
+/*.header .logo {
+    font-size: 3rem;
+    line-height: 6.6rem;
 }
-.header ul{
-    margin: 0;
+
+.header .logo img {
+    float: left;
 }
-.header ul li{
-    height: 6rem;
-    text-align: center;
-    padding:1rem .5rem;
-    line-height:4rem;
-    margin: 0 1rem;
-}
-.header ul li a{
-    transition:all  .3s;
-    color:#000;
-    display: inline-block;
-    text-decoration:none;
-}
-.header{}
-.navbar-default .navbar-toggle .icon-bar{
-    background-color: #cf101c;
-}
-.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+
+.header .logo span {
+    float: left;
+    padding: 0 1rem;
+}*/
+
+.header nav {
     background-color: #fff;
 }
 
+.header ul {
+    margin: 0;
+}
+
+.header ul li {
+    height: 6rem;
+    text-align: center;
+    padding: 1rem .5rem;
+    line-height: 4rem;
+    margin: 0 1rem;
+}
+
+.header ul li a {
+    transition: all .3s;
+    color: #000;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.header {
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #cf101c;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+
+    border:none;
+}
+.nav_li ul li{
+
+}
+@media screen and (min-width: 768px) {
+    .navbar-nav {
+        float: right;
+    }
+}
 /*轮播图*/
-.swiper-slide{
+.swiper-slide {
     height: 40rem;
     background-color: #ccc;
     width: 100%;
 }
-.swiper-wrapper{
+
+.swiper-wrapper, #swiper-wrapper {
     width: 1170px;
-    padding:0;
+    padding: 0;
     margin: 0;
 }
-.swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
     left: 0;
 }
 
+.swiper-wrapper img {
+    height: 100%;
+}
+
 /*底部*/
-.footer{
-    color:#fff;
-    padding:2rem 0;
-    background: url("../images/footer_back.jpg") no-repeat ;
+.footer {
+    color: #fff;
+    padding: 2rem 0;
+    background: url("../images/footer_back.jpg") no-repeat;
     background-size: 100% 100%;
 }
-.footer{}
-.footer .footer_content{
+
+.footer {
+}
+
+.footer .footer_content {
     height: 40px;
     line-height: 40px;
 }
-.footer ul li{
-    padding:0;
+
+.footer ul li {
+    padding: 0;
 }
-.footer ul li a{
+
+.footer ul li a {
     text-decoration: none;
-    color:#fff;
+    color: #fff;
     transition: all .3s;
 }
-hr{
-    border-color:#f00;
+
+hr {
+    border-color: #f00;
 }
-.footer_bottom p{
-    color:#fff;
-    font-size:1.2rem;
+
+.footer_bottom p {
+    color: #fff;
+    font-size: 1.2rem;
     line-height: 2rem;
 }
-.footer_bottom center{
-    color:#fff;
+
+.footer_bottom center {
+    color: #fff;
     text-align: center;
-    font-size:1rem;
+    font-size: 1rem;
 }
+
 /*下拉菜单*/
-#box{
+#box {
     float: right;
     left: 0;
     text-align: center;
-    padding:0;
+    padding: 0;
     cursor: pointer;
     height: 34px;
     position: relative;
     z-index: 30;
 }
-#div{
+
+#div {
     width: 200px;
     height: 34px;
-    line-height:34px;
+    line-height: 34px;
     background-color: #e4a001;
-    color:#fff;
+    color: #fff;
 }
-.footer #box li{
-    list-style:none;
+
+.footer #box li {
+    list-style: none;
     background-color: #f9f9f9;
-    border-bottom:1px solid #ccc;
+    border-bottom: 1px solid #ccc;
     height: 34px;
-    line-height:34px;
+    line-height: 34px;
     width: 200px;
 
 }
 
-.footer #box li a{
-    transition:all .3s;
-    color:#000;
+.footer #box li a {
+    transition: all .3s;
+    color: #000;
     display: inline-block;
     width: 100%;
     height: 100%;
 
 }
-#div span{
+
+#div span {
     display: inline-block;
     background: url("../icon/down.jpg");
     height: 34px;
@@ -143,10 +203,10 @@ hr{
     float: right;
 }
 
-#ul{
-    transition:all .3s;
+#ul {
+    transition: all .3s;
     display: none;
-    padding:0;
+    padding: 0;
 }
 
 

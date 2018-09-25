@@ -1,0 +1,78 @@
+.header_top {
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+}
+
+.header {
+    padding: 1rem 0;
+}
+
+.header h1 {
+    display: inline-block;
+    padding: 0;
+    float: left;
+    margin-left: -99999px;
+}
+
+.header h1 {
+    display: inline-block;
+    float: left;
+}
+
+/*.header .logo {
+    font-size: 3rem;
+    line-height: 6.6rem;
+}
+
+.header .logo img {
+    float: left;
+}
+
+.header .logo span {
+    float: left;
+    padding: 0 1rem;
+}*/
+
+.header nav {
+    background-color: #fff;
+}
+
+.header ul {
+    margin: 0;
+}
+
+.header ul li {
+    height: 6rem;
+    text-align: center;
+    padding: 1rem .5rem;
+    line-height: 4rem;
+    margin: 0 1rem;
+}
+
+.header ul li a {
+    transition: all .3s;
+    color: #000;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.header {
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #cf101c;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+
+    border:none;
+}
+.nav_li ul li{
+
+}
+@media screen and (min-width: 768px) {
+    .navbar-nav {
+        float: right;
+    }
+}

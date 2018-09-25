@@ -1,16 +1,42 @@
-.header ul li:hover {
+/*.header ul li:hover {
     background: url("../icon/dis.png") 0rem 5rem no-repeat;
     background-size: 100%;
-}
+}*/
 
+.header ul li:hover{
+    border-bottom:2px solid #cf101c;
+}
+@media screen and (max-width: 768px){
+    .header ul li{
+        background-color: #f1f1f1;
+        margin-top: 2px;
+    }
+    .header ul li:hover{
+        border-bottom:none;
+        background-color: #ccc;
+        color:#cf101c;
+    }
+}
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
     color: #f00;
 }
 
-.footer li a:hover{
+.header ul li:hover a{
     color:#cf101c;
 }
 .footer #box ul li a:hover{
     color:#cf101c;
     background-color: #ccc;
+}
+.work{
+    transition: all .3s;
+}
+.work:hover{
+    margin-top:-12px;
+}
+.latest-news-bg{
+    transition: all 1s;
+}
+.latest-news-bg:hover{
+    background-color: #cf101c;
 }

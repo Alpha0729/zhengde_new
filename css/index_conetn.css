@@ -145,11 +145,11 @@ a:hover{
 .learn-more:hover{
    background:#ff5b65;
 }
-.col-md-3,.col-xs-12,.col-sm-6{
+.col-sm-6{
     padding-bottom: 30px;
 
 }
-.col-md-4.col-xs-12,.col-sm-6{
+.col-md-4,.col-sm-6{
     padding-bottom: 30px;
 
 }
@@ -169,7 +169,7 @@ a:hover{
 }
 .latest-news-title{
     height: 80px;
-    border-bottom:solid 2px #fc101c;
+    border-bottom:solid 2px #cf101c;
 
 }
 .latest-news-title h5{
@@ -182,7 +182,7 @@ a:hover{
     font-size: 10px;
 }
 .latest-news-bg:hover{
-    background: #fc101c;
+    background: #cf101c;
 }
 .latest-news:hover h5 a{
     color:#ffffff;
