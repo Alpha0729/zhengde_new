@@ -1,0 +1,143 @@
+html,body{
+    padding:0;margin:0;
+}
+a{
+    color: #000000;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+    color: #000000;
+}
+.synopsis {
+    padding: 50px 0;
+}
+/*课程介绍/发展方向*/
+.curriculum-bg{
+    background: #f7f7f7;
+    padding: 50px 0;
+}
+.curriculum-padding{
+     padding: 15px;
+ }
+.curriculum{
+    border:solid 1px #cccccc;
+    border-radius: 10px;
+    padding: 20px 30px;
+    font-size: 12px;
+    height: 230px;
+    overflow: hidden;
+}
+.curriculum-h2,.system-h2{
+padding-bottom: 40px;
+}
+/*培训体系*/
+.system-padding{
+    padding-bottom:30px;
+}
+.system-1{
+    height: 150px;
+    background: url("../images/trader_icon_1.png") no-repeat 0% 50% ;
+    padding: 30px;
+}
+.system-2{
+    height: 150px;
+    background: url("../images/trader_icon_2.png") no-repeat 0% 50% ;
+    padding:30px;
+}
+.system-3{
+    height: 150px;
+    background: url("../images/trader_icon_3.png") no-repeat 0% 50% ;
+    padding: 0px;
+}
+.system-4{
+    height: 150px;
+    background: url("../images/trader_icon_4.png") no-repeat 0% 50% ;
+    padding: 10px 0px;
+}
+.system-1,.system-2,.system-3 .content{
+    padding-left:100px;
+    padding-top: 25px;
+}
+
+.system-4 .content-center{
+    padding-left:100px;
+}
+/*导师介绍*/
+.teacher-padding{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.teacher-sl{
+    background: url("../images/teacher-sl.jpg") no-repeat;
+    background-size: 100% 100%;
+    height: 140px;
+    border-radius: 10px;
+}
+.teacher-sj{
+    background: url("../images/teacher-sj.jpg") no-repeat;
+    background-size: 100% 100%;
+    height: 140px;
+    border-radius: 10px;
+}
+/*从业证书*/
+.certificate img{
+    height: 90px;
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+.certificate .bd{
+    border-bottom: 1px solid #5e5e5e;
+    border-right: 1px solid #5e5e5e;
+}
+.certificate .bd-none{
+    border-bottom: 1px solid #5e5e5e;
+}
+.certificate .bd-bottom{
+    border-right: 1px solid #5e5e5e;
+}
+.certificate-pading{
+    padding-left: 15px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+/*教学环境*/
+/*就业渠道*/
+.work-height{
+    height: 250px;
+}
+.work{
+    height: 40px;
+    width: 100%;
+    margin: 10px 10px ;
+    background: #cf101c;
+    border-radius: 10px;
+    line-height: 40px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing:2px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position:absolute;
+    background-color:#5e5e5e;
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 6px 0px 0px 0px;
+    margin-top:-10px ;
+    border-radius: 10px;
+    z-index: 1;
+}
+.dropdown-content p{
+    font-size: 14px;
+    line-height: 20px;
+
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
