@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../hover/contact.css">
     <link rel="icon" href="../images/logo.png">
 </head>
-<body>
+<body style="height: 8000px">
 <!--面包屑-->
 <div class="container">
     <div class="crumbs">
@@ -52,25 +52,53 @@
         </div>
     </div>
 </section>
+<!--留言-->
+<section class="synopsis">
+    <div class="container">
+
+        <h2 class="text-center">留言</h2><br><br>
+        <form class="form-inline">
+            <div class="form-group message-width col-md-6">
+                <label class="sr-only" for="exampleInputEmail3">名字</label>
+                <input type="email" class="" id="exampleInputEmail3" placeholder="名字">
+            </div>
+            <div class="form-group message-width col-md-6">
+                <label class="sr-only" for="exampleInputEmail3">联系方式</label>
+                <input type="email" class="" id="" placeholder="电话/邮箱/微信/QQ" >
+            </div>
+        </form>
+    </div>
+</section>
 </body>
 </html>
 <script type="text/javascript" src="../js/jquery.min.js"></script>
 <script type="text/javascript" src="../js/bootstrap.min.js"></script>
-
 <!-- 加载地图JSAPI脚本 -->
 <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.10&key=451c86d71cdb508acb3d9f301a019c0b"></script>
 <script>
     var map = new AMap.Map('abc', {
         resizeEnable: true, //是否监控地图容器尺寸变化
-        zoom:11, //初始化地图层级
+        zoom:5, //初始化地图层级
         center: [114.513579,36.596497] //初始化地图中心点
     });
     var marker = new AMap.Marker({
         position:[114.513579,36.596497]//位置
+
     });
-    map.add(marker);//添加到地图
-
-
+    var marker2 = new AMap.Marker({
+        position:[116.442636,39.919017]//位置
+    });
+    var marker3 = new AMap.Marker({
+        position:[114.4658,38.042226]//位置
+    });
+    var marker4 = new AMap.Marker({
+        position:[117.213667,29.294982]//位置
+    });
+    var marker5 = new AMap.Marker({
+        position:[111.699577,40.790826]//位置
+    });
+    var markerList = [marker, marker2, marker3, marker4, marker5];
+    map.add(markerList);//添加到地图
     //实时路况图层
     var trafficLayer = new AMap.TileLayer.Traffic({
         zIndex: 10
@@ -78,6 +106,7 @@
     map.add(trafficLayer);//添加图层到地图
 
     //跳
+    marker.setMap(map);
+    // 设置点标记的动画效果，此处为弹跳效果
     marker.setAnimation('AMAP_ANIMATION_BOUNCE');
-    marker.setTitle('正德管理');
 </script>
