@@ -1,0 +1,49 @@
+html,body{
+    padding:0;margin:0;
+}
+a{
+    color: #000000;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+    color: #cf101c;
+}
+ul{
+    list-style: none;
+}
+.synopsis{
+    padding: 50px 0;
+}
+.synopsis-bg{
+    padding: 50px 0;
+    background: #f7f7f7;
+}
+.tt-padding{
+    padding-bottom: 20px;
+}
+/*面包屑*/
+.crumbs{
+    height: 50px;
+    border-bottom: solid 1px #cccccc;
+    line-height: 50px;
+}
+/*地址*/
+#abc{
+    width:100%;
+    height: 250px;
+    background: #cccccc;
+}
+.addr .bg{
+    background: #f7f7f7;
+}
+.addr .bg .row{
+    padding: 30px;
+}
+.addr p{
+    font-size: 12px;
+    line-height: 20px;
+}
+.addr p span{
+    letter-spacing: 9px;
+}

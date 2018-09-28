@@ -1,0 +1,74 @@
+html,body{
+    padding:0;margin:0;
+}
+a{
+    color: #000000;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+    color: #cf101c;
+}
+ul{
+    list-style: none;
+}
+.synopsis{
+    padding: 50px 0;
+}
+.synopsis-bg{
+    padding: 50px 0;
+    background: #f7f7f7;
+}
+
+/*面包屑*/
+.crumbs{
+    height: 50px;
+    border-bottom: solid 1px #cccccc;
+    line-height: 50px;
+}
+/*开户*/
+/*资金孵化*/
+.hatch table thead th{
+    background: #ffffff;
+}
+/*资产管理*/
+.management-lh-3 p{
+line-height: 90px;
+}
+.management-lh-5 p{
+    line-height: 160px;
+}
+.management-lh-2 p{
+    line-height: 50px;
+}
+/*私募基金*/
+.fund ul .fund-icon-1{
+    background: url("../images/fund-1.png") no-repeat;
+    background-size: 15%;
+    padding-left: 100px;
+    height: 100px;
+}
+.fund ul .fund-icon-2{
+    background: url("../images/fund-2.png") no-repeat;
+    background-size: 15%;
+    padding-left: 100px;
+    height:100px;
+}
+.fund ul .fund-icon-3{
+    background: url("../images/fund-3.png") no-repeat;
+    background-size: 15%;
+    padding-left: 100px;
+    height: 100px;
+}
+.fund-tb{
+    padding-left: 50px;
+}
+.fund-text{
+    padding-right: 100px;
+}
+.fund table thead .fund-tb-bg{
+    background: #ffffff;
+}
+.fund-lh-6 p{
+    line-height:180px;
+}
