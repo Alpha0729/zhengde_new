@@ -28,10 +28,10 @@
     color:#cf101c;
     background-color: #ccc;
 }
-.work{
+.trains{
     transition: all .3s;
 }
-.work:hover{
+.trains:hover{
     margin-top:-12px;
 }
 .latest-news-bg{
@@ -39,4 +39,30 @@
 }
 .latest-news-bg:hover{
     background-color: #cf101c;
+}
+.news-bg img{
+    transition: all .3s;
+}
+.news-bg img:hover{
+    transform: scale(1.1);
+
+}
+
+.trans_max{
+    transition: all 0.3s;
+
+}
+.trans_max:hover{
+    transform: scale(1.2);
+}
+
+/*公共*/
+.red{
+    color: #cf101c;
+}
+.banner{
+    height:400px;
+}
+.active{
+    border-bottom:2px solid #cf101c;
 }
