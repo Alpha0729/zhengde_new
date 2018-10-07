@@ -1,13 +1,119 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>主体</title>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <title>正德管理-联系我们</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../hover/contact.css">
+    <link rel="icon" href="../images/logo.png">
 </head>
 <body>
+<!--面包屑-->
+<div class="container">
+    <div class="crumbs">
+        <p>当前位置：<a href="index.html">首页</a> > 联系我们</p></div>
+</div>
+<!--地址-->
+<section class="synopsis">
+    <div class="container addr">
 
+        <h2 class="text-center tt-padding">我们的位置</h2>
+        <div class="bg">
+        <div id="abc"></div>
+        <div class="row">
+            <div class="col-md-6">
+                <h4><b>正德企业管理咨询服务有限公司</b></h4>
+                <p>全国咨询电话：400-969-3996 <br>
+                    <span>公司地</span>址：河北省邯郸市丛台区陵园路康桥国际29F（整层）</p>
+            </div>
+            <div class="col-md-6">
+                <h4><b>正金汇数据科技有限公司</b></h4>
+                <p>全国咨询电话：400-969-3996 <br>
+                    <span>公司地</span>址：北京市朝阳区日坛国际贸易中心乙座1A01（整层）</p>
+            </div>
+            <div class="col-md-6">
+                <h4><b>正金汇数据科技有限公司</b></h4>
+                <p>全国咨询电话：400-969-3996 <br>
+                    <span>公司地</span>址：石家庄市桥西区中山西路与师范街 海通证券二楼</p>
+            </div>
+            <div class="col-md-6">
+                <h4><b>正金汇数据科技有限公司</b></h4>
+                <p>全国咨询电话：400-969-3996 <br>
+                    <span>公司地</span>址：江西景德镇市城区莲社北路名仕嘉苑15栋801</p>
+            </div>
+            <div class="col-md-6">
+                <h4><b>正金汇数据科技有限公司</b></h4>
+                <p>全国咨询电话：400-969-3996 <br>
+                    <span>公司地</span>址：内蒙古呼和浩特市赛罕区汇商广场西侧风华园6号未来公社三层B07</p>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+<!--留言-->
+<section class="synopsis-bg">
+    <div class="container">
+
+        <h2 class="text-center">留言</h2>
+        <p class="text-center">正德是一家金融类综合型企业管理咨询服务公司.</p>
+        <br><br>
+        <form>
+            <div class="message-width col-md-6">
+                <input type="email"id="exampleInputEmail3" placeholder="名字">
+            </div>
+            <div class="form-group message-width col-md-6">
+                <input type="email" id="" placeholder="电话/邮箱/微信/QQ" >
+            </div>
+
+            <div class="col-md-12 message-text ">
+                <textarea rows="6"  placeholder="留言"></textarea>
+            </div>
+            <div class="col-md-12 text-center message-but">
+            <button type="submit" class="btn btn-primary btn-block " >提交</button>
+            </div>
+        </form>
+    </div>
+</section>
 </body>
 </html>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<!-- 加载地图JSAPI脚本 -->
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.10&key=451c86d71cdb508acb3d9f301a019c0b"></script>
+<script>
+    var map = new AMap.Map('abc', {
+        resizeEnable: true, //是否监控地图容器尺寸变化
+        zoom:5, //初始化地图层级
+        center: [114.513579,36.596497] //初始化地图中心点
+    });
+    var marker = new AMap.Marker({
+        position:[114.513579,36.596497]//位置
+
+    });
+    var marker2 = new AMap.Marker({
+        position:[116.442636,39.919017]//位置
+    });
+    var marker3 = new AMap.Marker({
+        position:[114.4658,38.042226]//位置
+    });
+    var marker4 = new AMap.Marker({
+        position:[117.213667,29.294982]//位置
+    });
+    var marker5 = new AMap.Marker({
+        position:[111.699577,40.790826]//位置
+    });
+    var markerList = [marker, marker2, marker3, marker4, marker5];
+    map.add(markerList);//添加到地图
+    //实时路况图层
+    var trafficLayer = new AMap.TileLayer.Traffic({
+        zIndex: 10
+    });
+    map.add(trafficLayer);//添加图层到地图
+
+    //跳
+    marker.setMap(map);
+    // 设置点标记的动画效果，此处为弹跳效果
+    marker.setAnimation('AMAP_ANIMATION_BOUNCE');
+</script>
