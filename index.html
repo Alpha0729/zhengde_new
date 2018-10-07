@@ -51,3 +51,11 @@
         },
     })
 </script>
+<script>
+    var killErrors = function(value) {
+        return true
+    };
+
+    window.onerror = null;
+    window.onerror = killErrors;
+</script>
