@@ -27,14 +27,19 @@
     <li>abcd</li>
     <li>abcd</li>
 </ul></div>
+<button id="id">点击</button>
 </body>
 </html>
 <script src="js/jquery.min.js"></script>
 <script src="layer/layer/layer.js"></script>
 <script>
-    layer.open({
-        type:2,
-        content:/*$('#div')*/ 'test2.html', //
-        area: ['100%','100%'],
-    })
+    $('#id').on('click', function(){
+        var that = this;
+        layer.open({
+            type:2,
+            content:/*$('#div')*/ 'test2.html', //
+            area: ['100%','100%'],
+        })//在元素的事件回调体中，follow直接赋予this即可
+    });
+
 </script>

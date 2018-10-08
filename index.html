@@ -28,6 +28,8 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="layer/layer/layer.js"></script>
+<h2 style="text-align: center">产品展示</h2>
 <script>
     var mySwiper = new Swiper('.swiper-container', {
         //direction: 'vertical',  //垂直
@@ -51,6 +53,20 @@
         },
     })
 </script>
+<script>
+    $('#id').on('click', function(){
+        var that = this;
+        layer.open({
+            title:['<h2 style="text-align: center">数据展示</h2>','height:80px;'],
+            type:2,
+            content:/*$('#div')*/ 'html/edu_1.html', //
+            area: ['1200px','100%'],
+            shadeClose:true
+        })//在元素的事件回调体中，follow直接赋予this即可
+        return false;
+    });
+</script>
+
 <script>
     var killErrors = function(value) {
         return true

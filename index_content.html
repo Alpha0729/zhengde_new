@@ -8,16 +8,24 @@
     <title></title>
     <link rel="stylesheet" href="css/index_conetn.css">
     <link rel="icon" href="images/logo.png">
-    <link rel="stylesheet" href="layer/layer/">
+    <link rel="stylesheet" href="layer/layer/layer.js">
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css">
      <script src="js/bootstrap.min.js"></script>-->
+    <style>
+        .amd{
+            padding:20px;
+        }
+        .amd2{
+            padding-bottom:20px;
+        }
+    </style>
 </head>
 <body>
 <div class="tab swiper-container">
     <ul class="swiper-wrapper container">
         <li class="swiper-slide">
             <img class="img-responsive" src="images/banner.png" alt="">
-            <p style="position:absolute;left:50%;top:50%; color:#fff;font-size:50px;font-weight: bold">韩艺玮!</p>
+            <p style="position:absolute;left:50%;top:50%; color:#fff;font-size:50px;font-weight: bold"></p>
         </li>
     </ul>
     <div class="container">
@@ -26,33 +34,45 @@
     </div>
 </div>
 <section class="synopsis">
-    <div class="container" style="background-color: #eee">
-        <div class="col-md-4">
-            <div class="col-md-5 text-center">
-                <img style="width: 80px;height: 80px;background-color: #ccc;"  src="images/trader_icon_1.png" alt="">
-                <h3>天天利！</h3>
-            </div>
-            <p class="col-md-7 ">
-                jjjjjjj基督教的举动的的的的的的jjjjjjj基督教的举动的的的的的的jjjjjjj基督教的举动的的的的的的jjjjjjj基督教的举动的的的的的的 的的的
-            </p>
-        </div>
-        <div class="col-md-4">
-            <div class="col-md-6 text-center">
-                <img style="width: 80px;height: 80px;background-color: green;"  src="images/trader_icon_1.png" alt="">
-                <h3>天天利！</h3>
-            </div>
-            <p class="col-md-6 ">
-                jjjjjjj基督教的举动的的的的的的jjjjjjj基督教的举动的的的的的的jjjjjjj基督教的举动的的的的的的jjjjjjj基督教的举动的的的的的的 的的的
-            </p>
-        </div>
-        <div class="col-md-4">
-            <div class="col-md-6 text-center">
-                <img style="width: 80px;height: 80px;background-color: green;"  src="images/trader_icon_1.png" alt="">
-                <h3>天天利！</h3>
-            </div>
-            <p class="col-md-6 ">
-                jjjjjjj基督教的举动的的的的的的jjjjjjj基督教的举动的的的的的的jjjjjjj基督教的举动的的的的的的jjjjjjj基督教的举动的的的的的的 的的的
-            </p>
+    <div class="amd" style="background-color: #eee">
+        <h2 class="text-center amd2"><strong>产品展示</strong></h2>
+        <div class="container">
+            <a id="id" title="收益详情" href="#:;">
+                <div class="col-md-4">
+                    <div class="col-md-5 text-center">
+                        <img style="width: 80px;height: 80px"  src="data_img/ipo.png" alt="">
+                        <h3>跟单壹号</h3>
+                    </div>
+                    <p class="col-md-7 ">
+                    <center style="color:#cf101c;font-size:16px;">交易策略:</center>
+                    <p style="">日内短线，看长补短，双级别，双周期操作，低风险，高收益，高胜率，持续获利</p>
+                    </p>
+                </div>
+            </a>
+            <a title="收益详情" href="#:;">
+                <div class="col-md-4">
+                    <div class="col-md-5 text-center">
+                        <img style="width: 80px;height: 80px"  src="data_img/ipo.png" alt="">
+                        <h3>跟单壹号</h3>
+                    </div>
+                    <p class="col-md-7 ">
+                    <center style="color:#cf101c;font-size:16px;">交易策略:</center>
+                    <p style="">日内短线，看长补短，双级别，双周期操作，低风险，高收益，高胜率，持续获利</p>
+                    </p>
+                </div>
+            </a>
+            <a title="收益详情" href="#:;">
+                <div class="col-md-4">
+                    <div class="col-md-5 text-center">
+                        <img style="width: 80px;height: 80px"  src="data_img/ipo.png" alt="">
+                        <h3>跟单壹号</h3>
+                    </div>
+                    <p class="col-md-7 ">
+                    <center style="color:#cf101c;font-size:16px;">交易策略:</center>
+                    <p style="">日内短线，看长补短，双级别，双周期操作，低风险，高收益，高胜率，持续获利</p>
+                    </p>
+                </div>
+            </a>
         </div>
     </div>
     <div class="container">
@@ -283,3 +303,13 @@
         },
     })
 </script>
+<!--<script>
+    $('#id').on('click', function(){
+        var that = this;
+        layer.open({
+            type:2,
+            content:/*$('#div')*/ 'test2.html', //
+            area: ['100%','100%'],
+        })//在元素的事件回调体中，follow直接赋予this即可
+    });
+</script>-->
