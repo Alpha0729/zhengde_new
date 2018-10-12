@@ -21,7 +21,8 @@ a:hover{
 .section-style{
     padding: 10px 0;
     color: #5e5e5e;
-    font-size: 16px;
+    font-size: 12px;
+    text-indent:2em;
 }
 .kecheng{
     padding: 20px 0;
@@ -149,10 +150,7 @@ a:hover{
     padding-bottom: 30px;
 
 }
-.col-md-4,.col-sm-6{
-    padding-bottom: 30px;
 
-}
 .synopsis-latest{
     padding-top: 0px;
     padding-bottom: 50px;
@@ -195,4 +193,38 @@ a:hover{
 }
 .latest-news:hover .latest-news-title{
     border-bottom:solid 2px #ffffff;
+}
+
+/*基金*/
+.amd{
+    background-color: #f0f0f0;
+}
+.amd ul{
+    padding:15px 10px;
+    background-color: #fff;
+    border-radius:5px;
+}
+.amd ul li{
+    background-color: #fff;
+}
+.amd ul li h5{
+    color:#3c415f;
+    font-size:18px;
+}
+.amd ul li div{
+    padding:0;
+
+}
+.amd ul li div p{
+    padding:0;
+    font-size:16px;
+}
+.amd ul li div p span,.amd ul li  div p small{ padding:0;
+}
+.amd ul li div p span{
+    color:#cf101c;
+}
+.amd ul li div p small{
+    color:#888;
+    font-size:12px;
 }

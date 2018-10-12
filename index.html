@@ -54,19 +54,31 @@
     })
 </script>
 <script>
-    $('#id').on('click', function(){
+    $('#money').on('click', function(){
         var that = this;
         layer.open({
             title:['<h2 style="text-align: center">数据展示</h2>','height:80px;'],
             type:2,
             content:/*$('#div')*/ 'html/edu_1.html', //
-            area: ['1200px','100%'],
+            area: ['800px','100%'],
+            shadeClose:true
+        })//在元素的事件回调体中，follow直接赋予this即可
+        return false;
+    });
+    $('#money2').on('click', function(){
+        var that = this;
+        layer.open({
+            title:['<h2 style="text-align: center">数据展示</h2>','height:80px;'],
+            type:2,
+            content:/*$('#div')*/ 'html/edu_1.html', //
+            area: ['800px','100%'],
             shadeClose:true
         })//在元素的事件回调体中，follow直接赋予this即可
         return false;
     });
 </script>
 
+<!--
 <script>
     var killErrors = function(value) {
         return true
@@ -74,4 +86,4 @@
 
     window.onerror = null;
     window.onerror = killErrors;
-</script>
+</script>-->

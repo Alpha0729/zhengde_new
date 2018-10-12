@@ -5,15 +5,20 @@
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
     <title>正德管理-联系我们</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../hover/contact.css">
     <link rel="icon" href="../images/logo.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../hover/hvoer.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../hover/contact.css">
+
 </head>
 <body>
+<div id="header"></div>
 <!--面包屑-->
 <div class="container">
     <div class="crumbs">
-        <p>当前位置：<a href="index.html">首页</a> > 联系我们</p></div>
+        <p>当前位置：<a href="../index.html">首页</a> > 联系我们</p></div>
 </div>
 <!--地址-->
 <section class="synopsis">
@@ -76,6 +81,7 @@
         </form>
     </div>
 </section>
+<div id="footer"></div>
 </body>
 </html>
 <script type="text/javascript" src="../js/jquery.min.js"></script>
@@ -117,3 +123,8 @@
     // 设置点标记的动画效果，此处为弹跳效果
     marker.setAnimation('AMAP_ANIMATION_BOUNCE');
 </script>
+<script type="text/javascript">
+    $("#header").load("../local/header.html");
+    $("#footer").load("../local/footer.html");
+</script>
+<script type="text/javascript" src="../js/index.js"></script>

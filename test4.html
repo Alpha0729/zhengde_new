@@ -8,42 +8,95 @@
     <title>API</title>
 </head>
 <body>
-<body>
 <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
-<div id="main" style="width: 600px;height:400px;background-color: #ccc;">
-
-</div>
-</body>
+<div id="item" style="width: 800px;height:600px;background-color: #eee;"></div>
 </body>
 </html>
+<script src="js/jquery.min.js"></script>
 <script src="echarts.min.js"></script>
 <script type="text/javascript">
     // 基于准备好的dom，初始化echarts实例
-    var myChart = echarts.init(document.getElementById('main'));
-
-    // 指定图表的配置项和数据
-    var option = {
+    var myChart = echarts.init(document.getElementById('item'));
+    option = {
+        backgroundColor: '#eee',
         title: {
-            text:['ECharts 测试']
-        },
-        tooltip: {
-            trigger: 'axis',
-
+            show:false,
+            text: '扇形图测试',
+            left: 'center',
+            top: 20,
+            textStyle: {
+                color: '#f00',
+            }
         },
         legend: {
-            data:['销量']
+            orient : 'horizontal',   //垂直显示提示位置
+            x : 'right',       //扇形提示对应颜色文字位置
+            data:['直接访问','邮件营销','联盟广告','视频广告','搜索引擎']
         },
-        xAxis: {
-            data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
+        tooltip: {
+            trigger: 'item',
+            formatter: "{a} <br/>{b} : {c} ({d}%)"
         },
-        yAxis: {},
-        series: [{
-            name: '销量',
-            type: 'line',
-            data: [5, 20, 36, 10, 10, 20]
-        }]
-    };
+        visualMap: {
+            show: false,
+            min: 80,
+            max: 600,
+            inRange: {
+                colorLightness: [0, 1]
+            }
+        },
+        series: [
+            {
+                name: '访问来源',
+                type: 'pie',
+               /* radius : ['40%', '60%'],   // 让扇形变成空心圆*/
+                radius : ['3%','70%'],
+                center: ['50%', '50%'],
+                data: [
+                    {value: 335, name: '直接访问'},
+                    {value: 310, name: '邮件营销'},
+                    {value: 274, name: '联盟广告'},
+                    {value: 235, name: '视频广告'},
+                    {value: 400, name: '搜索引擎'},
 
-    // 使用刚指定的配置项和数据显示图表。
+                ],
+                /*roseType: 'area',  //'radius' 扇区圆心角展现数据的百分比，半径展现数据的大小。
+                //'area' 所有扇区圆心角相同，仅通过半径展现数据大小。*/
+                label: {
+                    normal: {
+                        textStyle: {//扇区位子颜色
+                            color: '#fc101c' //扇区位子颜色
+                            ,fontSize:20
+                        },
+
+                    },
+
+                },
+                labelLine: {  //扇区与文字线的属性配置
+                    normal: {
+                        lineStyle: {
+                            color: 'rgba(255, 0, 0, 1)' //文字与扇区连接线颜色
+                        },
+                        smooth: 0.2,
+                        length: 20,
+                        length2: 30,
+                    }
+                },
+                itemStyle: {
+                   /* normal: {
+                        color: '#c23531',
+                        shadowBlur: 200,
+                        shadowColor: 'rgba(0, 255, 0, 0.5)'
+                    },*/ //扇形面渐变
+
+                },
+                animationType: 'scale',  //动画
+                animationEasing: 'elasticOut', //动画
+                /*animationDelay: function (idx) {
+                    return Math.random() * 200;  //动画时间
+                }*/
+            }
+        ]
+    };
     myChart.setOption(option);
 </script>

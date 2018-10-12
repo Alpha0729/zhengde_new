@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0"/>
+    <title>title</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../hover/contact.css">
+    <link rel="icon" href="../images/logo.png">
+    <style>
+        #box {
+            padding: 20px;
+        }
+        .border_h {
+            border-top: 20px solid #333;
+            border-bottom: 20px solid #333;
+        }
+    </style>
+</head>
+<body>
+<div class="border_h" id="box">
+    <div class="container">
+        <table class="table table-bordered">
+            <tbody>
+            <tr>
+                <td class="text-right active">胜算</td>
+                <td>48.87%</td>
+                <td class="text-right active">亏损笔数 （平仓）</td>
+                <td>227.00笔</td>
+            </tr>
+            <tr>
+                <td class="text-right active">最大亏损率</td>
+                <td>26.76%</td>
+                <td class="text-right active">最大盈利率</td>
+                <td>1638.35%</td>
+            </tr>
+            <tr>
+                <td class="text-right active">最大连续盈利次数</td>
+                <td>10.00次</td>
+                <td class="text-right active">最大连续亏损次数</td>
+                <td>9.00次</td>
+            </tr>
+            <tr>
+                <td class="text-right active">盈利笔数（平仓）</td>
+                <td>217.00笔</td>
+                <td class="text-right active">交易周期</td>
+                <td>711.00天</td>
+            </tr>
+            <tr>
+                <td class="text-right active">交易笔数（开仓、平仓）</td>
+                <td>874.00笔</td>
+                <td class="text-right active">盈亏比</td>
+                <td>1.63:1</td>
+            </tr>
+            <tr>
+                <td class="text-right active">平均每笔亏损</td>
+                <td>-1672.70元元</td>
+                <td class="text-right active">累计手续费</td>
+                <td>16280.79元</td>
+            </tr>
+            <tr>
+                <td class="text-right active">平均每笔盈利</td>
+                <td>2856.33元</td>
+                <td class="text-right active">平均每笔费用</td>
+                <td>18.63元</td>
+            </tr>
+            <tr>
+                <td class="text-right active">费用占比</td>
+                <td>6%</td>
+                <td class="text-right active">累计净利润</td>
+                <td>364744.28元</td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <ul>
+                        <li style="color:red">
+                            投资有风险，入市需谨慎！
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <ul class="container clearfix">
+        <li class="pdd">
+            <h2 class="text-center">资金曲线</h2>
+            <!--<img class="img-responsive" src="../data_img/k2_1.png" alt="">-->
+            <div class="col-md-12 money " title="鼠标滚轮放大" id="money" style=""></div>
+        </li>
+        <li class="pdd">
+            <hr>
+            <h2 class="text-center pdd">盈亏曲线</h2>
+            <div id="clear" class="col-md-12 money"></div>
+        </li>
+        <li class="pdd">
+            <hr>
+            <h2 class="text-center pdd">交易偏好</h2>
+            <img style="margin: auto" class="img-responsive" src="../data_img/k2_3.png" alt="">
+        </li>
+        <li class="pdd">
+            <hr>
+            <h2 class="text-center pdd">品种盈亏</h2>
+            <img style="margin: auto" class="img-responsive" src="../data_img/k2_4.png" alt="">
+        </li>
+        <li class="pdd">
+            <hr>
+            <h2 class="text-center pdd">多单盈亏结构</h2>
+            <img style="margin: auto" class="img-responsive" src="../data_img/k2_5.png" alt="">
+        </li>
+        <li class="pdd">
+            <hr>
+            <h2 class="text-center pdd">空单盈亏结构</h2>
+            <img style="margin: auto" class="img-responsive" src="../data_img/k2_6.png" alt="">
+        </li>
+        <li class="pdd">
+            <hr>
+            <h2 class="text-center pdd">盈利结构</h2>
+            <img style="margin: auto" class="img-responsive" src="../data_img/k2_7.jpg" alt="">
+        </li>
+        <li class="pdd">
+            <hr>
+            <h2 class="text-center pdd">亏损结构</h2>
+            <img style="margin: auto" class="img-responsive" src="../data_img/k2_7.jpg" alt="">
+        </li>
+    </ul>
+</div>
+</body>
+</html>
+<script src="../js/jquery.min.js"></script>
+<script src="../echarts.min.js"></script>
+<script src="../js/chart.js"></script>
+<script src="../js/edu_3.js"></script>
+
