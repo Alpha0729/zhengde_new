@@ -31,6 +31,15 @@ a:hover{
 .curriculum-h2,.system-h2{
 padding-bottom: 40px;
 }
+/*培训班简介*/
+.firm_img{
+    position: relative;
+    z-index: -1;
+    bottom: 50px;
+}
+.firm_text{
+    padding-left: 68px;
+}
 /*培训体系*/
 .system-padding{
     padding-bottom:30px;
