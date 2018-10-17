@@ -1,0 +1,116 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #cf101c;
+}
+
+ul {
+    list-style: none;
+}
+
+.synopsis {
+    padding-top: 50px;
+}
+
+.synopsis-bg {
+    padding: 50px 0;
+    background: #f7f7f7;
+}
+
+/*知富通*/
+.zf {
+    height: 45px;
+    background: #cf101c;
+    color: #FFFFFF;
+    line-height: 45px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+}
+
+.zf-btn {
+    display: inline-block;
+    height: 40px;
+    width: 170px;
+    background: url("../images/dl_setup.png");
+    background-size: 100% 100%;
+    line-height: 40px;
+    color: #2e0200;
+    font-size: 18px;
+}
+
+.zf-pd p {
+    font-size: 12px;
+    color: #cf101c;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+}
+
+.zf-pd h4 {
+    color: #cf101c;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+}
+
+.zf-pd h5 {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+}
+
+.zf-pd .text-black {
+    color: #000000;
+    font-size: 12px;
+}
+
+.zf-bd {
+    border: 1px #cecece solid;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    background: #eeeeee;
+    box-shadow: 0px 0px 8px 1px #888888;
+}
+
+.zf-btn a span {
+    padding-left: 75px;
+}
+
+.zf-bd .scan {
+    font-weight: 700;
+    font-size: 14px;
+    color: black;
+}
+
+.top {
+    width: 54px;
+    height: 54px;
+    border: 0;
+    opacity: 0.5;
+}
+.top:hover {
+
+    opacity: 1;
+}
