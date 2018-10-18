@@ -5,63 +5,65 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
     <link rel="stylesheet" href="layui/layui/css/layui.css">
-    <style>
-        body{
-            background-color: #999;
-        }
-        li {
-            background-color: #cccccc;
-            margin-top: 10px;
-
-        }
-        h3{
-            margin-top: 20px;
-            background-color: #2b542c;
-        }
-        h4{
-            background-color: gold;
-        }
-    </style>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>test</title>
 </head>
 <body>
-<ul id="LAY_demo2">
-    <li>1</li>
-</ul>
-<div id="box"></div>
+<div style="width: 25%;margin: 20px auto;overflow: hidden"> <!--action="test.php"-->
+    <form class="layui-form layui-form-pane" action="test.php" method="post">
+        <div class="layui-form-item">
+            <label for="int" class="layui-form-label">
+                <i class="fa fa-user-o fa-lg" style="padding-right:5px;"></i>姓名：</label> <!--for 要绑定的表单id 进行选中-->
+            <div class="layui-input-block ">
+                <input id="int" type="text" name="user_name"  placeholder="请输入姓名" autocomplete="off" class="layui-input layui-form-danger">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label layui-input layui-form-danger">
+                <i class="fa fa-phone fa-lg" style="padding-right:5px;"></i>
+                手机：</label> <!--for 要绑定的表单id 进行选中-->
+            <div class="layui-input-block">
+                <input type="text" name="user_phone" lay-verify="required|phone" placeholder="请输入电话(必填)" autocomplete="off" class="layui-input layui-form-danger">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label layui-input layui-form-danger">
+                <i class="fa fa-map-marker fa-lg" style="padding-right:5px;"></i>
+                地址：</label> <!--for 要绑定的表单id 进行选中-->
+            <div class="layui-input-block">
+                <input type="text" name="user_id" placeholder="请输入所在地址" autocomplete="off" class="layui-input layui-form-danger " >
+            </div>
+        </div>
+        <div class="layui-form-item layui-form-text">
+            <label class="layui-form-label">
+                <i class="fa fa-edit fa-lg" style="padding-right:5px;"></i>
+                备注：</label> <!--for 要绑定的表单id 进行选中-->
+            <div class="layui-input-block">
+                <textarea name="user_text" class="layui-textarea" placeholder="疑问解答"></textarea>
+                <!--<input type="text" name="title" required="" lay-verify="required" placeholder="请输入所在地址" autocomplete="off" class="layui-input layui-form-danger " >-->
+            </div>
+        </div>
+        <button class="layui-btn" lay-submit="" lay-filter="formDemo">立即提交</button>
+       <!-- <button class="layui-btn layui-col-md12" lay-submit lay-filter="formDemo"> 提交</button>-->
+    </form>
+</div>
 </body>
 </html>
 <script src="layui/layui/layui.js"></script>
 <script>
-    layui.use('flow', function () {
-        var $ = layui.jquery; //不用额外加载jQuery，flow模块本身是有依赖jQuery的，直接用即可。
-        var flow = layui.flow;
-        var nub=null;
-        var lis = ['<h3 class="">123aa</h3>','<h3 class="">123bb</h3>','<h3 class="">123cc</h3>','<h3 class="">123</h3>','<h3 class="">123</h3>',];
-        flow.load({
-            elem: '#box' //流加载容器
-            , isAuto: false
-            , isLazyimg: true
-            ,scrollElem:''
-            , done: function (page, next) { //加载下一页
-                //模拟插入
-                /*var lis2 =[];
-                for(var i=0;i<2;i++){
-                    lis2.push(lis[i]+"<h4>"+i+"</h4>");
-                }
-                console.log(lis2);
-                next(lis2.join(''), page < 4);*/ //假设总页数为 3
-                setTimeout(function () {
-                    var lis = [];
-                    for (var i = 0; i < 2; i++) {
-                        lis.push("<li><h1>12</h1><img  lay-src=\'icon/down.jpg'>"+i+"</li>")
-                    }
-                    console.log(lis);
-                    next(lis.join(''), page < 3); //假设总页数为 3
-                }, 500);
-            },
-            end:'德玛西亚永世长存！'
+    layui.use('form', function (){
+        var form = layui.form;
+        //监听提交
+        form.on('submit(formDemo)', function (data,state) {
+            layer.msg(JSON.stringify(data.field));
+            console.log(data)
+            console.log(state)
+            return false;//阻止提交跳转
         });
     });
+
+</script>
+<script>
+
 </script>

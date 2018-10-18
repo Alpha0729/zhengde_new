@@ -7,6 +7,10 @@ li{
     margin: 0;
 }
 
+.header_top span{
+    font-size:16px;color: #e4a011;
+}
+
 .header {
     padding: 1rem 0;
 }

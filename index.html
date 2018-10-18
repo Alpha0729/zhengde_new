@@ -11,12 +11,109 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="hover/hvoer.css">
     <link rel="stylesheet" href="css/swiper.min.css">
+
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <title>正德管理_操盘手培训</title>
+    <style>
+        #form {
+            background-color: #fff;
+            display: none;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        #side_right {
+            position: fixed;
+            right: 0;
+            top: 40%;
+            width: 100px;
+            height: 200px;
+            text-align: center;
+            border-radius: 8px;
+            z-index: 9999;
+        }
+
+        #greet {
+            transition: .3s all ;
+            -webkit-animation:mymove 2s;
+            animation-iteration-count:infinite;
+        }
+        @keyframes mymove
+        {
+            from{
+                color:#000;
+            }
+            to{
+                color:#fff
+            }
+            /*from {opacity:0.3;}
+            to {opacity:1;}*/
+        }
+        #up_top {
+            margin-top: 80px;
+        }
+
+        #up_top i {
+            background-color: #ccc;
+            color: #fff;
+            display: inline-block;
+            padding: 10px;
+            border-radius: 2px;
+        }
+    </style>
 </head>
 <body style="">
 <div id="header"></div>
 <div id="content"></div>
 <div id="footer"></div>
+<!--用户留言-->
+<div id="form" style="overflow: hidden">
+    <form class="layui-form layui-form-pane" action="../test.php" method="post">
+        <div class="layui-form-item">
+            <label for="int" class="layui-form-label">
+                <i class="fa fa-user-o fa-lg" style="padding-right:5px;"></i>姓名：</label> <!--for 要绑定的表单id 进行选中-->
+            <div class="layui-input-block ">
+                <input id="int" type="text" name="user_name" placeholder="请输入姓名" autocomplete="off"
+                       class="layui-input layui-form-danger">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label layui-input layui-form-danger">
+                <i class="fa fa-phone fa-lg" style="padding-right:5px;"></i>
+                手机：</label> <!--for 要绑定的表单id 进行选中-->
+            <div class="layui-input-block">
+                <input type="text" name="user_phone" lay-verify="required|phone" placeholder="请输入电话(必填)" readonly="readonly"
+                       autocomplete="off" class="layui-input layui-form-danger " lay-verify="phone"/>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label layui-input layui-form-danger">
+                <i class="fa fa-map-marker fa-lg" style="padding-right:5px;"></i>
+                地址：</label> <!--for 要绑定的表单id 进行选中-->
+            <div class="layui-input-block">
+                <input type="text" name="user_id" placeholder="请输入所在地址" autocomplete="off"
+                       class="layui-input layui-form-danger ">
+            </div>
+        </div>
+        <div class="layui-form-item layui-form-text">
+            <label class="layui-form-label">
+                <i class="fa fa-edit fa-lg" style="padding-right:5px;"></i>
+                备注</label> <!--for 要绑定的表单id 进行选中-->
+            <div class="layui-input-block">
+                <textarea name="user_text" class="layui-textarea" placeholder="疑问解答"></textarea>
+                <!--<input type="text" name="title" required="" lay-verify="required" placeholder="请输入所在地址" autocomplete="off" class="layui-input layui-form-danger " >-->
+            </div>
+        </div>
+        <button class="layui-btn layui-col-md12" lay-submit>提交</button>
+    </form>
+</div>
+<!--侧边栏-->
+<div id="side_right" style="">
+    <div class="btn-danger btn" id="greet" title="点击咨询">在线咨询</div>
+    <div id="up_top">
+        <a href="#"> <i class="fa fa-angle-double-up fa-2x"></i></a>
+    </div>
+</div>
 </body>
 </html>
 <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -29,7 +126,6 @@
 <script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript" src="js/swiper.min.js"></script>
 <script type="text/javascript" src="layer/layer/layer.js"></script>
-<h2 style="text-align: center">产品展示</h2>
 <script>
     var mySwiper = new Swiper('.swiper-container', {
         //direction: 'vertical',  //垂直
@@ -54,36 +150,41 @@
     })
 </script>
 <script>
-    $('#money').on('click', function(){
+    $('#money').on('click', function () {
         var that = this;
         layer.open({
-            title:['<h2 style="text-align: center">数据展示</h2>','height:80px;'],
-            type:2,
-            content:/*$('#div')*/ 'html/edu_1.html', //
-            area: ['800px','100%'],
-            shadeClose:true
+            title: ['<h2 style="text-align: center">数据展示</h2>', 'height:80px;'],
+            type: 2,
+            content: /*$('#div')*/ 'html/edu_1.html', //
+            area: ['800px', '100%'],
+            shadeClose: true
         })//在元素的事件回调体中，follow直接赋予this即可
         return false;
     });
-    $('#money2').on('click', function(){
+    $('#money2').on('click', function () {
         var that = this;
         layer.open({
-            title:['<h2 style="text-align: center">数据展示</h2>','height:80px;'],
-            type:2,
-            content:/*$('#div')*/ 'html/edu_1.html', //
-            area: ['800px','100%'],
-            shadeClose:true
+            title: ['<h2 style="text-align: center">数据展示</h2>', 'height:80px;'],
+            type: 2,
+            content: /*$('#div')*/ 'html/edu_1.html', //
+            area: ['800px', '100%'],
+            shadeClose: true
         })//在元素的事件回调体中，follow直接赋予this即可
         return false;
     });
 </script>
-
-<!--
+<script src="./layui/layui/layui.js"></script>
 <script>
-    var killErrors = function(value) {
-        return true
-    };
+    $('#greet').click(function () {
+        layui.use('layer', function () {
+            var layer = layui.layer;
+            layer.open({
+                title: '请留下您的联系方式',
+                type: 1,
+                content: $('#form'),
+                shade: 0.5
+            })
+        });
+    });
 
-    window.onerror = null;
-    window.onerror = killErrors;
-</script>-->
+</script>

@@ -150,3 +150,6 @@ padding-bottom: 40px;
 .dropdown:hover .dropdown-content {
     display: block;
 }
+.gray{
+    background-color: #f1f1f1;
+}
