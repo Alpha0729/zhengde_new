@@ -85,10 +85,7 @@ ul {
 
 .zf-bd {
     border: 1px #cecece solid;
-    padding-top: 15px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding:15px 10px 10px 10px;
     border-radius: 10px;
     background: #eeeeee;
     box-shadow: 0px 0px 8px 1px #888888;
@@ -111,6 +108,5 @@ ul {
     opacity: 0.5;
 }
 .top:hover {
-
     opacity: 1;
 }
